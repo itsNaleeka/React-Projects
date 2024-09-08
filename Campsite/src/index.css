@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primaryColor: rgb(53, 177, 53);
+}
+
+svg{
+  stroke: var(--text);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.textCenter{
+  text-align: center !important;
+}
+.mt-5{
+  margin-top: 5rem;
+}
+button{
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s cubic-bezier(0.47, 0, 0.23, 1.38);
+}
+button:active{
+  transform: scale(0.9);
+}
+input, 
+select,
+a {
+  font-family: inherit;
+}
+input[type='date'],
+input[type='checkbox'],
+input[type='checkbox'] ~ label,
+select,
+a{
+  cursor: pointer;
+}
+input::placeholder{
+  font-size: 0.9rem;
+}
+.pBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--text);
+  cursor: pointer;
+  color: var(--bg-1);
+  padding: 0.45rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  transition: all 0.4s cubic-bezier(0.47, 0, 0.23, 1.38);
+}
+.pBtn:active{
+  transform: scale(0.95);
+}
+.pColorText{
+  color: var(--primaryColor);
+}
+.navLink{
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: background 0.1s ease-in;
+}
+.navLink:hover {
+  background: #e9e9e9;
+}
+button.navLink{
+  background: var(--btn-bg-2);
+  color: var(--text);
+}
+.inputIcon{
+  position: relative;
+}
+.inputIcon .icon{
+  position: absolute;
+  top: -3rem;
+  font-size: 1.8rem;
+  left: 1rem;
+  color: var(--text);  
+}
+#formOut{
+  padding: 0;
+  display: none !important;
+}
+#formOut.active{
+  display: inline !important;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+.error{
+  color: rgb(187, 0, 0);
+  background: rgb(255, 221, 221);
+}
+.success{
+  color: rgb(0, 128, 0);
+  background: rgb(221, 255, 221);
+}
