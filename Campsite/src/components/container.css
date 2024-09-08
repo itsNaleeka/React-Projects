@@ -1,0 +1,221 @@
+.body {
+  background: var(--bg-2);
+  position: relative;
+}
+.section {
+  padding-inline: 20rem;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  color: var(--text);
+}
+.section.row > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+}
+.leftSection,
+.rightSection {
+  z-index: 1;
+  height: 100vh;
+}
+.title {
+  text-transform: capitalize;
+  width: 80%;
+}
+.description {
+  width: 80%;
+  text-align: justify;
+  font-size: 1rem;
+  color: var(--text-2);
+}
+.section svg {
+  position: absolute;
+  bottom: 10rem;
+  left: 26rem;
+}
+.section-1 {
+  justify-content: start;
+}
+.circle-bg {
+  position: absolute;
+  top: 50%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+  width: 1400px !important;
+  height: 1400px;
+  border-radius: 100%;
+  background: var(--bg-1);
+  z-index: -1;
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 0 87%);
+}
+.section-2 {
+  padding-block: 15rem !important;
+  padding-bottom: 4rem !important;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  background: var(--bg-1);
+  text-align: center;
+  padding-block: 5rem;
+}
+.gallery {
+  margin-top: -5rem;
+  height: min-content;
+}
+.gallery span {
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--text-2);
+  width: 11rem;
+  height: 15rem;
+  position: relative;
+}
+.gallery span img {
+  position: absolute;
+  left: -5rem;
+  bottom: 0;
+}
+#p2 {
+  margin-top: 4rem;
+}
+#p3 {
+  margin-top: 8rem;
+}
+#p4 {
+  margin-top: 4rem;
+}
+#p5 {
+  margin-top: 8rem;
+}
+.section-2 .description {
+  margin-top: -4rem !important;
+}
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 10rem 20rem;
+}
+.bgImg {
+  position: absolute;
+  scale: 1.1;
+  bottom: 0;
+  left: 20rem;
+  transform-origin: bottom;
+}
+h1.title.center {
+  text-align: center;
+}
+.underline {
+  text-decoration: underline;
+}
+form.formContent {
+  margin-top: 5rem;
+  background: var(--bg-1);
+  padding: 3rem 4rem 2rem 3rem;
+  margin-left: 35rem;
+  border-radius: 0.5rem;
+}
+form.formContent > .row {
+  justify-content: space-between;
+}
+form.formContent > div:not(:first-child) {
+  margin-top: 2.5rem;
+}
+form.formContent > div > div {
+  display: flex;
+  flex: 1;
+  gap: 0.5rem;
+  align-items: s;
+  flex-direction: column;
+}
+input[type="text"],
+input[type="email"] {
+  background: var(--bg-2);
+  color: var(--text);
+  border: 0px;
+  padding: 0.75rem 0.75rem 0.75rem 4rem;
+  font-size: 1rem;
+}
+label {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.email:has(input[type="email"]) {
+  flex: 2.5;
+}
+.agreementCheck {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  flex: 1;
+  margin-left: 3rem;
+}
+.checkinDate #checkDate {
+  width: 100%;
+}
+.campSite {
+  width: min-content !important;
+  flex: 0.5 !important;
+}
+.campSite select {
+  text-transform: capitalize;
+  width: 12rem;
+  background: var(--bg-2);
+  padding: 0.5rem 1rem;
+  border: none;
+  color: inherit;
+}
+input[type="date"] {
+  background: var(--bg-2);
+  border: none;
+  color: inherit;
+  padding: 0.5rem 1rem;
+}
+#dark input[type="date"]{
+    color-scheme: dark;
+    cursor: pointer;
+}
+#light input[type="date"]{
+    color-scheme: light;
+}
+.notficationMsg {
+  opacity: 0;
+  z-index: 101;
+  position: fixed;
+  bottom: 2rem;
+  right: -20rem;
+  transition: all 1s cubic-bezier(0.47, 0, 0.23, 1.38);
+}
+.notficationMsg.active {
+  opacity: 1;
+  right: 1rem;
+}
+.notficationMsg:active {
+  scale: 0.95;
+}
+.popUp {
+  background: #0202024d;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 102;
+  position: fixed;
+  backdrop-filter: blur(2px);
+  transition: all 0.4s cubic-bezier(0.47, 0, 0.23, 1.38);
+}
+.grey {
+  color: var(--text-2);
+}
+.row-3{
+    align-items: end !important;
+}
+.inpTitle{
+    font-size: 0.8rem;
+}

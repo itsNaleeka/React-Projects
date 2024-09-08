@@ -1,0 +1,26 @@
+html{
+  font-size: 12px;
+}
+body {
+  font-family: Poppins;
+}
+a,
+button {
+  font-family: Poppins;
+}
+#dark {
+  --bg-1: #161616;
+  --bg-2: #222222;
+  --bg-3: #d6d6d6;
+  --text: #fefefe;
+  --text-2: #7C7C7c;
+  --btn-bg-2: #727272;
+}
+#light {
+  --bg-1: #fefefe;
+  --bg-2: #f6f6f6;
+  --bg-3: #313131;
+  --text: #1f1f1f;
+  --text-2: #7C7C7c;
+  --btn-bg-2: #f6f6f6;
+}
